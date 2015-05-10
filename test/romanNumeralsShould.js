@@ -25,4 +25,8 @@ var romanNumerals = require('../romanNumerals.js');
       it('should convert to X when 10 is provided', function(){
           romanNumerals.convertFrom(10).should.be.exactly("X");
       });
+
+      it('should convert to XIII when 13 is provided', function(){
+          romanNumerals.convertFrom(13).should.be.exactly("XIII");
+      });
   })
