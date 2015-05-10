@@ -1,13 +1,11 @@
 var romanNumerals = {};
 
 romanNumerals.convertFrom = function(arabicNumber){
-    if (arabicNumber === 1){
-        return "I"
+    var romanNumber = "";
+    for (var i = 0; i < arabicNumber; i++) {
+        romanNumber += "I";
     }
-    if (arabicNumber === 2){
-        return "II"
-    }
-    return undefined;
+    return romanNumber;
 };
 
 module.exports = romanNumerals;

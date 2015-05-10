@@ -10,4 +10,8 @@ var romanNumerals = require('../romanNumerals.js');
     it('should convert to II when 2 is provided', function(){
         romanNumerals.convertFrom(2).should.be.exactly("II");
     })
+
+    it('should convert to III when 3 is provided', function(){
+        romanNumerals.convertFrom(3).should.be.exactly("III");
+    })
   })
