@@ -2,7 +2,7 @@ var romanNumerals = {};
 
 romanNumerals.convertFrom = function(arabicNumber){
     var romanNumber = "";
-    if (arabicNumber >= 10) {
+    while (arabicNumber >= 10) {
         romanNumber += "X";
         arabicNumber -= 10;
     }
