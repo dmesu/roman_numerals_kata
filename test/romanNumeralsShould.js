@@ -18,7 +18,11 @@ var romanNumerals = require('../romanNumerals.js');
           romanNumerals.convertFrom(5).should.be.exactly("V");
       });
 
-      it('should convert to V when 7 is provided', function(){
+      it('should convert to VII when 7 is provided', function(){
           romanNumerals.convertFrom(7).should.be.exactly("VII");
+      });
+
+      it('should convert to X when 10 is provided', function(){
+          romanNumerals.convertFrom(10).should.be.exactly("X");
       });
   })
